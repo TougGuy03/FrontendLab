@@ -1,9 +1,16 @@
+:root {
+  --color-main-green: #637D61;
+  --color-accent-green: #789776;
+  --color-text: #5B6158;
+  --color-background: #FEFBF7;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0 auto;
-  background-color: #FEFBF7;
-  
+  background-color: var(--color-background);
+  max-width: 1600px;
 }

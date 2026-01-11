@@ -1,0 +1,257 @@
+.home {
+    position: relative;
+    min-height: 830px;
+    margin: 0 auto;
+}
+.main_section_title{
+    position: absolute;
+
+    font-family: New-YorkerC;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 84px;
+    line-height: 120%;
+    letter-spacing: 0.7%;
+    top: 191px;
+    left: 200px;
+    margin: 0;
+
+    color: var(--color-main-green)
+
+}
+
+.main_section_subtitle{
+    position: absolute;
+
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0%;
+
+    top: 415px;
+    left: 205px;
+
+}
+
+.book_btn{
+    position: absolute;
+    width: 155px;
+    height: 155px;
+    top: 471px;
+    left: 635px;
+    border: none;
+    cursor: pointer;
+
+    background-color: var(--color-accent-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 7%;
+    text-transform: uppercase;
+    color: #FEFBF7;
+}
+
+.main_section_mini_image img{
+    position: absolute;
+    width: 183px;
+    height: 250px;
+    top: 580px;
+    left: 200px;
+    border-top-left-radius: 91.5px;
+    border-top-right-radius: 91.5px;
+    object-fit: cover;
+}
+
+.main_section_list{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: absolute;
+    top: 658px;
+    left: 402px;
+    list-style: none;
+    padding: 0;
+}
+
+.main_section_list_item{
+    display: flex;
+    align-items: flex-start;
+    gap:8px;
+
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+    letter-spacing: 0%;
+    color: #3F423D;
+}
+
+.main_section_list_number{
+    font-family: New-YorkerC;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: var(--color-main-green);
+}
+
+.main_section_media{
+    position: absolute;
+    width: 488px;
+    height: 650px;
+    top: 180px;
+    left: 912px;
+
+    display:flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.main_section_image img{
+    width: 488px;
+    height: 604px;
+    border-top-left-radius: 244px;
+    border-top-right-radius: 244px;
+    object-fit: cover;
+    object-position: 94% center;
+}
+
+.main_section_slider{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_section_slider_counter{
+    font-family: Raleway;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 7%;
+    text-transform: uppercase;
+    color: var(--color-text);
+}
+
+.process{
+    color: var(--color-accent-green);
+    font-size: 16px;
+}
+
+.main_section_slider_line{
+  position: relative;
+  flex: 1;
+  max-width: 340px;
+  height: 1px;
+  background: #CBC9C1;
+}
+
+.main_section_slider_progress{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1px;
+  background: var(--color-accent-green); 
+}
+
+.main_section_slider_btns{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.slider_btn{
+    width:34px;
+    height:34px;
+    border-radius: 50%;
+    border: 1px solid var(--color-accent-green);
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.slider_btn:hover{
+    background-color: var(--color-accent-green);
+}
+.slider_btn:hover svg path{
+  stroke:  #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .home{
+        min-height: 637px;
+    }
+
+    .main_section_title{
+        font-size: 54px;
+        top: 142px;
+        left: 36px;
+    }
+
+    .main_section_subtitle{
+        top: 281px;
+        left: 37px;
+    }
+
+    .book_btn{
+        width: 111px;
+        height: 111px;
+        top: 351.42px;
+        left: 279px;
+        font-size:12px;
+    }
+
+    .main_section_mini_image img{
+        width: 139px;
+        height: 192px;
+        top: 428px;
+        left: 36px;
+    }  
+    
+    .main_section_list{
+    top: 491px;
+    left: 177px;
+    gap: 10px;
+    }
+
+    .main_section_list_item{
+        font-size: 12px;
+    }
+    .main_section_list_number{
+        font-size: 32px;
+    }
+
+    .main_section_media{
+        top: 168px;
+        left: 422px;
+        gap:17px;
+        width: 310px;
+    }
+
+    .main_section_image img{
+        width: 310px;
+        height: 418px;
+        object-position: 90% center;
+    }
+
+    .main_section_slider_line{
+        max-width: 194.25px;
+    }
+
+    @media (max-width: 768px){
+        .home{
+            min-height: 951px;
+            margin-top: 29px;
+        }
+    }
+}
+
+
+
