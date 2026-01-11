@@ -1,0 +1,91 @@
+.navbar{
+    width: 100%;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.navbar_box{
+    max-width: 1194px;
+    min-width: 327px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar_logo{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.logo_text{
+    font-family: Bookman Old Style;
+    font-weight: 300;
+    font-style: Regular;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.navbar_atr{
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+}
+.navbar_link{
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    vertical-align: bottom;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #5B6158;
+}
+
+.phone_box{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.navbar_phone{
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+    color: #5B6158;
+    text-decoration: none;
+
+}
+
+.burger{
+    display: none;
+    background: none;
+    border: none; 
+}
+
+@media (max-width: 768px) {
+  .navbar_atr {
+    display: none;
+  }
+
+  .burger {
+    display: inline-flex;
+  }
+
+  .navbar_phone {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .adaptive_burger{
+    display: flex;
+    gap: 35px;
+  }
+
+}
