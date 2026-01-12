@@ -3,6 +3,7 @@
   --color-accent-green: #789776;
   --color-text: #5B6158;
   --color-background: #FEFBF7;
+  --color-text-double: #3F423D;
 }
 
 * {
@@ -13,4 +14,10 @@ body {
   margin: 0 auto;
   background-color: var(--color-background);
   max-width: 1600px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
 }

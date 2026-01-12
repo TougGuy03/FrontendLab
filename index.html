@@ -6,6 +6,7 @@
    <link rel="stylesheet" href="./styles/mainStyle.css" />
    <link rel="stylesheet" href="./styles/headerStyle.css" />
    <link rel="stylesheet" href="./styles/mainSectionStyle.css" />
+   <link rel="stylesheet" href="./styles/directionStyle.css" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -89,7 +90,81 @@
         </section>
     </div>
   <main>
-  </main>
+    <section class="section_directions">
+        <div class="directions_header">
+            <h2 class="directions_title">
+                ВСЕ НАПРАВЛЕНИЯ В ОДНОМ<br>
+                АБОНЕМЕНТЕ
+            </h2>
 
+            <p class="directions_subtitles">
+                Не определились с направлением?<br>
+                Мы подскажем!
+            </p>
+        </div>
+        <div class="directions_main">
+             <div class="directions_buttons" id="direction-buttons">
+            </div>
+            <div class="directions_media" id="direction-media">
+                <img id="direction-img" alt="">
+            </div>
+            <div class="directions_inf">
+
+                <div class="directions_inf_meta">
+                    <div class="directions_inf_meta_main" id="direction-title"></div>
+
+                    <div class="directions_inf_meta_description">
+                        <div class="direction_days_container">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 2V5" stroke="#98958B" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 2V5" stroke="#98958B" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.5 9.08984H20.5" stroke="#98958B" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.9998 3.5L20.9998 22.2L2.99976 22L3.0457 3.5H20.9998Z" stroke="#98958B" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 17H12.1965" stroke="#98958B" stroke-linecap="square" stroke-linejoin="round"/>
+                            <path d="M17 17H17.1965" stroke="#98958B" stroke-linecap="square" stroke-linejoin="round"/>
+                            <path d="M17 13H17.1965" stroke="#98958B" stroke-linecap="square" stroke-linejoin="round"/>
+                            <path d="M7 17H7.19648" stroke="#98958B" stroke-linecap="square" stroke-linejoin="round"/>
+                            <path d="M12 13H12.1965" stroke="#98958B" stroke-linecap="square" stroke-linejoin="round"/>
+                            <path d="M7 13H7.19648" stroke="#98958B" stroke-linecap="square" stroke-linejoin="round"/>
+                            </svg>
+                            <div id="direction-days"></div>
+                        </div>
+                        <div class="direction_duration_container">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.3563 13.8021C21.3563 18.8333 17.3217 22.9167 12.3506 22.9167C7.3795 22.9167 3.34497 18.8333 3.34497 13.8021C3.34497 8.77083 7.3795 4.6875 12.3506 4.6875C17.3217 4.6875 21.3563 8.77083 21.3563 13.8021Z" stroke="#98958B" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12.3506 8.33337V13.5417" stroke="#98958B" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.26294 2.08337H15.4382" stroke="#98958B" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <div id="direction-duration"></div>
+                        </div>
+                    </div>
+                    <div class="directions_inf_text" id="direction-text"></div>
+                </div>
+
+                <div class="directions_inf_slider">
+                    <div class="main_section_slider_line">
+                    <div class="main_section_slider_progress" style="width: 33.333%;"></div>
+                </div>
+
+                <div class="main_section_slider_btns">
+                    <button class="slider_btn" type="button" >
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.0739 4.91675L6.31682 9.67384C6.26744 9.72321 6.26744 9.80326 6.31682 9.85264L11.0739 14.6097" stroke="#789776" stroke-linecap="round"/>
+                    </svg>
+                    </button>
+                    <button class="slider_btn" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.75991 4.91687L13.517 9.67396C13.5664 9.72334 13.5664 9.80339 13.517 9.85276L8.75991 14.6099" stroke="#789776" stroke-linecap="round"/>
+                    </svg>
+                    </button>
+                </div>
+                </div>
+            </div>
+        
+
+        </div>
+    </section>
+  </main>
+  <script src="./scripts/scriptDirections.js"></script>
 </body>
 </html>
