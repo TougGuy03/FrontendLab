@@ -65,27 +65,28 @@
     
             <div class="main_section_media">
             <div class="main_section_image">
-                <img src="./img/section1/mainImg1.jpg" alt="">
+                <img  id="main-section-img" src="./img/section1/mainImg1.jpg" alt="">
             </div>
            <div class="main_section_slider">
-                <span class="main_section_slider_counter"><span class="process">1</span>/3</span>
+                <span class="main_section_slider_counter"><span class="process" id="main-section-counter">1</span>/3</span>
 
                 <div class="main_section_slider_line">
-                    <div class="main_section_slider_progress" style="width: 33.333%;"></div>
+                    <div class="main_section_slider_progress" id="main-section-slider-progress"></div>
                 </div>
 
                 <div class="main_section_slider_btns">
-                    <button class="slider_btn" type="button" >
+                    <button class="slider_btn" type="button" id="main-section-prev" >
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.0739 4.91675L6.31682 9.67384C6.26744 9.72321 6.26744 9.80326 6.31682 9.85264L11.0739 14.6097" stroke="#789776" stroke-linecap="round"/>
                     </svg>
                     </button>
-                    <button class="slider_btn" type="button">
+                    <button class="slider_btn" type="button" id="main-section-next">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.75991 4.91687L13.517 9.67396C13.5664 9.72334 13.5664 9.80339 13.517 9.85276L8.75991 14.6099" stroke="#789776" stroke-linecap="round"/>
                     </svg>
                     </button>
                 </div>
+            </div>
             </div>
         </section>
     </div>
@@ -127,7 +128,7 @@
                             <path d="M12 13H12.1965" stroke="#98958B" stroke-linecap="square" stroke-linejoin="round"/>
                             <path d="M7 13H7.19648" stroke="#98958B" stroke-linecap="square" stroke-linejoin="round"/>
                             </svg>
-                            <div id="direction-days"></div>
+                            <div class="direction_days" id="direction-days"></div>
                         </div>
                         <div class="direction_duration_container">
                             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -135,28 +136,29 @@
                             <path d="M12.3506 8.33337V13.5417" stroke="#98958B" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M9.26294 2.08337H15.4382" stroke="#98958B" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                            <div id="direction-duration"></div>
+                            <div class="direction_duration" id="direction-duration"></div>
                         </div>
                     </div>
                     <div class="directions_inf_text" id="direction-text"></div>
                 </div>
 
                 <div class="directions_inf_slider">
-                    <div class="main_section_slider_line">
-                    <div class="main_section_slider_progress" style="width: 33.333%;"></div>
-                </div>
 
-                <div class="main_section_slider_btns">
-                    <button class="slider_btn" type="button" >
+                <div class="directions_slider_btns">
+                    <button class="slider_btn" type="button" id="direction-button-prev" >
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M11.0739 4.91675L6.31682 9.67384C6.26744 9.72321 6.26744 9.80326 6.31682 9.85264L11.0739 14.6097" stroke="#789776" stroke-linecap="round"/>
                     </svg>
                     </button>
-                    <button class="slider_btn" type="button">
+                    <button class="slider_btn" type="button" id="direction-button-next">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.75991 4.91687L13.517 9.67396C13.5664 9.72334 13.5664 9.80339 13.517 9.85276L8.75991 14.6099" stroke="#789776" stroke-linecap="round"/>
                     </svg>
                     </button>
+                </div>
+
+                <div class="directions_slider_line">
+                    <div class="directions_slider_progress" id="direction-progress"></div>
                 </div>
                 </div>
             </div>
@@ -165,6 +167,7 @@
         </div>
     </section>
   </main>
+  <script src="./scripts/scriptMainSection.js"></script>
   <script src="./scripts/scriptDirections.js"></script>
 </body>
 </html>

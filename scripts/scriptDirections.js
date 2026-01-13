@@ -7,6 +7,9 @@ const days = document.getElementById("direction-days");
 const duration = document.getElementById("direction-duration");
 const text = document.getElementById("direction-text");
 const imgEl = document.getElementById("direction-img");
+const prevBtn = document.getElementById("direction-button-prev");
+const nextBtn = document.getElementById("direction-button-next");
+const progress = document.getElementById("direction-progress");
 
 fetch("./data/data1.json")
   .then(function (response) {
@@ -47,7 +50,29 @@ function showDirection(index) {
     p.textContent = direction.text[i];
     text.appendChild(p);
   }
-
+  
   imgEl.src = direction.imageUrl;
   imgEl.alt = direction.title;
+   const percent = ((activeIndex + 1) / directions.length) * 100;
+  progress.style.width = percent + "%";
 }
+
+prevBtn.addEventListener("click", () => {
+  activeIndex--;
+
+  if (activeIndex < 0) {
+    activeIndex = directions.length - 1;
+  }
+
+  showDirection(activeIndex);
+});
+
+nextBtn.addEventListener("click", () => {
+  activeIndex++;
+
+  if (activeIndex >= directions.length) {
+    activeIndex = 0;
+  }
+
+  showDirection(activeIndex);
+});

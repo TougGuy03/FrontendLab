@@ -124,6 +124,7 @@
     border-top-right-radius: 244px;
     object-fit: cover;
     object-position: 94% center;
+    transition: opacity 400ms ease;
 }
 
 .main_section_slider{
