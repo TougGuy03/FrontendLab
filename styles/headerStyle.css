@@ -91,3 +91,23 @@
   }
 
 }
+
+@media (max-width: 375px) {
+  .logo_text{
+    font-size: 10px;
+  }
+
+  .navbar_logo svg{
+    width: 41px;
+    height: 41px;
+  }
+
+  .phone_box svg{
+     width: 15px;
+    height: 15px;
+  }
+
+    .navbar_phone{
+    font-size: 12px;
+  }
+}

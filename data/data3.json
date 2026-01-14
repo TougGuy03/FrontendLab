@@ -1,0 +1,87 @@
+{
+  "days": [
+    {
+      "id": "monday",
+      "label": "Понедельник",
+      "items": [
+            { "id": "ex-1", "title": "Хатха-йога", "time": "08:00", "durationMin": 90, "trainer": "Ирина Беляева" },
+            { "id": "ex-2", "title": "Здоровая спина", "time": "10:00", "durationMin": 60, "trainer": "Ирина Беляева" },
+            { "id": "ex-3", "title": "Пилатес", "time": "12:00", "durationMin": 90, "trainer": "Анна Беляева" },
+            { "id": "ex-4", "title": "Флоу-йога", "time": "14:00", "durationMin": 120, "trainer": "Ирина Беляева" },
+            { "id": "ex-5", "title": "Стретчинг", "time": "16:00", "durationMin": 80, "trainer": "Анна Беляева" },
+            { "id": "ex-6", "title": "Пилатес", "time": "18:00", "durationMin": 80, "trainer": "Анна Беляева" },
+            { "id": "ex-7", "title": "Флоу-йога", "time": "20:00", "durationMin": 80, "trainer": "Мария Смирнова" }
+        ]
+    },
+    {
+      "id": "tuesday",
+      "label": "Вторник",
+        "items": [
+            { "id": "ex-1",  "title": "Здоровая спина", "time": "08:00", "durationMin": 60, "trainer": "Екатерина Волкова" },
+            { "id": "ex-2", "title": "Хатха-йога", "time": "10:00", "durationMin": 90, "trainer": "Ирина Беляева" },
+            { "id": "ex-3", "title": "Пилатес", "time": "12:00", "durationMin": 90, "trainer": "Екатерина Волкова" },
+            { "id": "ex-4", "title": "Кундалини-йога", "time": "14:00", "durationMin": 120, "trainer": "Ирина Беляева" },
+            { "id": "ex-5", "title": "Стретчинг", "time": "16:00", "durationMin": 80, "trainer": "Анна Беляева" },
+            { "id": "ex-6","title": "Пилатес", "time": "18:00", "durationMin": 80, "trainer": "Анна Беляева" },
+            { "id": "ex-7", "title": "Кундалини-йога", "time": "20:00", "durationMin": 120, "trainer": "Мария Смирнова" }
+        ]
+
+    },
+    {
+      "id": "wednesday",
+      "label": "Среда",
+      "items": [
+            { "id": "ex-1", "title": "Хатха-йога", "time": "08:00", "durationMin": 90, "trainer": "Ирина Беляева" },
+            { "id": "ex-2", "title": "Здоровая спина", "time": "10:00", "durationMin": 60, "trainer": "Ирина Беляева" },
+            { "id": "ex-3", "title": "Пилатес", "time": "12:00", "durationMin": 90, "trainer": "Анна Беляева" },
+            { "id": "ex-4", "title": "Флоу-йога", "time": "14:00", "durationMin": 120, "trainer": "Ирина Беляева" },
+            { "id": "ex-5", "title": "Стретчинг", "time": "16:00", "durationMin": 80, "trainer": "Анна Беляева" },
+            { "id": "ex-6", "title": "Пилатес", "time": "18:00", "durationMin": 80, "trainer": "Анна Беляева" },
+            { "id": "ex-7", "title": "Кундалини-йога", "time": "20:00", "durationMin": 120, "trainer": "Мария Смирнова" }
+        ]
+    },
+    {
+      "id": "thursday",
+      "label": "Четверг",
+       "items": [
+            { "id": "ex-1", "title": "Хатха-йога", "time": "08:00", "durationMin": 90, "trainer": "Ирина Беляева" },
+            { "id": "ex-2", "title": "Здоровая спина", "time": "10:00", "durationMin": 60, "trainer": "Екатерина Волкова" },
+            { "id": "ex-3", "title": "Пилатес", "time": "12:00", "durationMin": 90, "trainer": "Екатерина Волкова" },
+            { "id": "ex-4", "title": "Флоу-йога", "time": "14:00", "durationMin": 120, "trainer": "Ирина Беляева" },
+            { "id": "ex-5", "title": "Стретчинг", "time": "16:00", "durationMin": 80, "trainer": "Анна Беляева" },
+            { "id": "ex-6", "title": "Пилатес", "time": "18:00", "durationMin": 80, "trainer": "Анна Беляева" },
+            { "id": "ex-7", "title": "Флоу-йога", "time": "20:00", "durationMin": 80, "trainer": "Ирина Беляева" }
+        ]
+
+    },
+    {
+      "id": "friday",
+      "label": "Пятница",
+      "items": [
+            { "id": "ex-1", "title": "Хатха-йога", "time": "08:00", "durationMin": 90, "trainer": "Ирина Беляева" },
+            { "id": "ex-2", "title": "Здоровая спина", "time": "10:00", "durationMin": 60, "trainer": "Ирина Беляева" },
+            { "id": "ex-3", "title": "Пилатес", "time": "12:00", "durationMin": 90, "trainer": "Анна Беляева" },
+            { "id": "ex-4", "title": "Кундалини-йога", "time": "14:00", "durationMin": 120, "trainer": "Мария Смирнова" },
+            { "id": "ex-5", "title": "Стретчинг", "time": "16:00", "durationMin": 80, "trainer": "Анна Беляева" },
+            { "id": "ex-6", "title": "Пилатес", "time": "18:00", "durationMin": 80, "trainer": "Анна Беляева" },
+            { "id": "ex-7", "title": "Кундалини-йога", "time": "20:00", "durationMin": 120, "trainer": "Мария Смирнова" }
+        ]
+
+
+    },
+    {
+      "id": "saturday",
+      "label": "Суббота",
+       "items": [
+            { "id": "ex-1", "title": "Хатха-йога", "time": "08:00", "durationMin": 90, "trainer": "Ирина Беляева" },
+            { "id": "ex-2", "title": "Здоровая спина", "time": "10:00", "durationMin": 60, "trainer": "Екатерина Волкова" },
+            { "id": "ex-3", "title": "Пилатес", "time": "12:00", "durationMin": 90, "trainer": "Екатерина Волкова" },
+            { "id": "ex-4", "title": "Флоу-йога", "time": "14:00", "durationMin": 120, "trainer": "Ирина Беляева" },
+            { "id": "ex-5", "title": "Стретчинг", "time": "16:00", "durationMin": 80, "trainer": "Анна Беляева" },
+            { "id": "ex-6", "title": "Пилатес", "time": "18:00", "durationMin": 80, "trainer": "Анна Беляева" },
+            { "id": "ex-7", "title": "Флоу-йога", "time": "20:00", "durationMin": 80, "trainer": "Ирина Беляева" }
+        ]
+
+    }
+  ]
+}

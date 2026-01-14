@@ -1,0 +1,36 @@
+{
+"priceList": [
+    {
+      "id": "single",
+      "price": 800
+    },
+    {
+      "id": "4lessons",
+      "count": "4",
+      "label": "занятия<br>в месяц",
+      "price": 3000,
+      "onePrice": 750
+    },
+     {
+      "id": "8lessons",
+      "count": "8",
+      "label": "занятий<br>в месяц",
+      "price": 5200,
+      "onePrice": 650
+    },
+    {
+      "id": "12lessons",
+      "count": "12",
+      "label": "занятий<br>в месяц",
+      "price": 6600,
+      "onePrice": 550 
+    },
+    {
+      "id": "unlimited",
+      "count": "",
+      "label": "безлимит<br>на месяц",
+      "price": 8800,
+      "onePrice": "зависит от вашей<br>активности"
+    }
+  ]
+}

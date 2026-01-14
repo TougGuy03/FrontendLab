@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="./styles/headerStyle.css" />
    <link rel="stylesheet" href="./styles/mainSectionStyle.css" />
    <link rel="stylesheet" href="./styles/directionStyle.css" />
+   <link rel="stylesheet" href="./styles/priceStyle.css" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -166,8 +167,35 @@
 
         </div>
     </section>
+    <section class="section_price">
+        <div class="price_header">
+            <h2 class="price_title">
+                СТОИМОСТЬ НАШИХ<br>
+                ТРЕНИРОВОК
+            </h2>
+    
+            <div class="price_subtitles_container">
+                <p class="price_subtitle">
+                    После покупки абонемента его необходимо <strong>активировать в течении трех месяцев</strong> с момента приобретения (дата активации - первое занятие).
+                </p>
+                 <p class="price_subtitle">
+                    Первая тренировка для новых клиентов бесплатная                
+                </p>
+            </div>
+        </div>
+        <div class="price_main">
+            <div class="price_left">
+                <div class="price_once" id="price-once"></div>
+                <button class="price_book_btn">Записаться</button>
+            </div>
+            <div class="price_right">
+                <div class="price_list" id="price-list"></div>
+            </div>
+        </div>
+    </section>
   </main>
   <script src="./scripts/scriptMainSection.js"></script>
   <script src="./scripts/scriptDirections.js"></script>
+  <script src="./scripts/scriptPrice.js"></script>
 </body>
 </html>

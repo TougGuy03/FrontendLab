@@ -1,9 +1,11 @@
 .section_directions{
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
     display: flex;
     gap: 72px;
     flex-direction: column;
+    padding: 0 20px;
 }
 
 .directions_header{
@@ -37,15 +39,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .directions_buttons{
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
+    display: flex;
     gap: 8px;
     max-height: 166px;
-    max-width: 319px;
-    
+    max-width: 330px;
+    flex-wrap: wrap;
+    width: 100%;
+    align-content: flex-start;
 }
 
 .direction_btn{
@@ -75,8 +79,10 @@
 }
 
 .directions_media img{
-    width: 346px;
-    height: 493px;
+     width: 100%;
+  max-width: 346px;
+  height: auto;
+  aspect-ratio: 346 / 493;
     border-top-left-radius: 173px;
     border-top-right-radius: 173px;
     border-bottom-right-radius: 192.5px;
