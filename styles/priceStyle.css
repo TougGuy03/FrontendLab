@@ -48,7 +48,7 @@
 .price_left{
     display: flex;
     flex-direction: column;
-    gap: 90px;
+    justify-content: space-between;
 }
 
 .price_card_single{

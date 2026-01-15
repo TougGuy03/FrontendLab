@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="./styles/mainSectionStyle.css" />
    <link rel="stylesheet" href="./styles/directionStyle.css" />
    <link rel="stylesheet" href="./styles/priceStyle.css" />
+   <link rel="stylesheet" href="./styles/scheduleStyle.css" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -193,9 +194,36 @@
             </div>
         </div>
     </section>
+    <section class="section_schedule">
+        <div class="schedule_header">
+            <h2 class="schedule_title">
+                НАЙДИ СВОЮ ПРАКТИКУ<br>
+                В НАШЕМ РАСПИСАНИИ
+            </h2>
+            <p class="schedule_subtitle">
+                Приглашаем на первое пробное занятие <strong>БЕСПЛАТНО!</strong> Не упустите возможность попробовать что‑то новое и полезное для вашего здоровья!
+            </p>
+        </div>
+        <div class="schedule_bottom">
+            <div class="schedule_nav">
+                <div class="schedule_tabs">
+                    <button class="tab" id="btn-mon">Понедельник</button>
+                    <button class="tab" id="btn-tus">Вторник</button>
+                    <button class="tab" id="btn-wen">Среда</button>
+                    <button class="tab" id="btn-ths">Четверг</button>
+                    <button class="tab" id="btn-frd">Пятница</button>
+                    <button class="tab" id="btn-sat">Суббота</button>
+                </div>
+                <div class="schedule_main" id="schedule-main">
+                </div>
+            </div>
+            <img class="schedule_img" id="schedule-img" src="./img/section3/scheduleImg.jpg" alt="">
+        </div>
+    </section>
   </main>
   <script src="./scripts/scriptMainSection.js"></script>
   <script src="./scripts/scriptDirections.js"></script>
   <script src="./scripts/scriptPrice.js"></script>
+  <script src="./scripts/scriptSchedule.js"></script>
 </body>
 </html>
