@@ -2,7 +2,9 @@
   position: relative;
   min-height: 830px;
   margin: 0 auto 120px;
+  max-width: 1600px;
 }
+
 
 .main_section_title{
   position: absolute;
@@ -22,6 +24,7 @@
   margin: 0;
   color: var(--color-main-green);
   white-space: nowrap;
+  
 }
 
 .main_section_subtitle{

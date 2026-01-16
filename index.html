@@ -9,6 +9,7 @@
    <link rel="stylesheet" href="./styles/directionStyle.css" />
    <link rel="stylesheet" href="./styles/priceStyle.css" />
    <link rel="stylesheet" href="./styles/scheduleStyle.css" />
+   <link rel="stylesheet" href="./styles/expertsStyle.css" />
    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -220,10 +221,56 @@
             <img class="schedule_img" id="schedule-img" src="./img/section3/scheduleImg.jpg" alt="">
         </div>
     </section>
+    <section class="section_experts">
+        <div class="experts_container">
+            <div class="experts_header">
+                <h2 class="experts_title">
+                   ЭКСПЕРТЫ В ОБЛАСТИ<br>
+                   ТЕЛА И РАЗУМА
+                </h2>
+                <p class="experts_subtitle">
+                    Наши инструктора сочетают свои знания и опыт, чтобы создать эффективные и интересные занятия, которые помогут вам укрепить мышечный корсет,  достичь гибкости, улучшить осанку и физическую форму. 
+                </p>
+            </div>
+            <div class="experts_bottom">
+                <div class="experts_main">
+                    <div class="experts_img">
+                        <img class="experts_current" id="experts-current" alt="">
+                    </div>
+                    <div class="experts_card" id="expert-card"></div>
+                </div>
+                <div class="experts_slid">
+                    <div class="experts_carousel" id="experts-carousel">
+    
+                    </div>
+                    <div class="experts_slider">
+                        <div class="experts_slider_btns">
+                        <button class="slider_btn" type="button" id="experts-button-prev" >
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.0739 4.91675L6.31682 9.67384C6.26744 9.72321 6.26744 9.80326 6.31682 9.85264L11.0739 14.6097" stroke="#789776" stroke-linecap="round"/>
+                        </svg>
+                        </button>
+                        <button class="slider_btn" type="button" id="experts-button-next">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.75991 4.91687L13.517 9.67396C13.5664 9.72334 13.5664 9.80339 13.517 9.85276L8.75991 14.6099" stroke="#789776" stroke-linecap="round"/>
+                        </svg>
+                        </button>
+                    </div>
+    
+                    <div class="experts_slider_line">
+                        <div class="experts_slider_progress" id="experts-progress"></div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
   </main>
   <script src="./scripts/scriptMainSection.js"></script>
   <script src="./scripts/scriptDirections.js"></script>
   <script src="./scripts/scriptPrice.js"></script>
   <script src="./scripts/scriptSchedule.js"></script>
+  <script src="./scripts/scriptExperts.js"></script>
 </body>
 </html>

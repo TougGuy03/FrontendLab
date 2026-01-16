@@ -14,11 +14,11 @@
 body {
   margin: 0 auto;
   background-color: var(--color-background);
-  max-width: 1600px;
 }
 
 main{
   display: flex;
   flex-direction: column;
   gap: 120px;
+
 }
