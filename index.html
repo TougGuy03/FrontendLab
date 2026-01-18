@@ -10,6 +10,8 @@
    <link rel="stylesheet" href="./styles/priceStyle.css" />
    <link rel="stylesheet" href="./styles/scheduleStyle.css" />
    <link rel="stylesheet" href="./styles/expertsStyle.css" />
+    <link rel="stylesheet" href="./styles/reviewStyle.css" />
+
    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -263,7 +265,36 @@
                     </div>
                 </div>
             </div>
-            
+        </div>
+    </section>
+    <section class="section_reviews">
+        <div class="reviews_header">
+            <h2 class="experts_title">
+                   НАШИ ДОВОЛЬНЫЕ<br>
+                   КЛИЕНТЫ
+            </h2>
+            <button class="review_btn" type="button" id="review-button" >ОСТАВИТЬ ОТЗЫВ</button>
+        </div>
+        <div class="review_carousel" id="review-carousel">
+        </div>
+        <div class="review_slid">
+            <div class="review_slider">
+                <div class="review_slider_btns">
+                <button class="slider_btn" type="button" id="review-button-prev" >
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.0739 4.91675L6.31682 9.67384C6.26744 9.72321 6.26744 9.80326 6.31682 9.85264L11.0739 14.6097" stroke="#789776" stroke-linecap="round"/>
+                </svg>
+                </button>
+                <button class="slider_btn" type="button" id="review-button-next">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.75991 4.91687L13.517 9.67396C13.5664 9.72334 13.5664 9.80339 13.517 9.85276L8.75991 14.6099" stroke="#789776" stroke-linecap="round"/>
+                </svg>
+                </button>
+            </div>
+
+            <div class="reviews_slider_line">
+                <div class="reviews_slider_progress" id="reviews-progress"></div>
+            </div>
         </div>
     </section>
   </main>
@@ -272,5 +303,6 @@
   <script src="./scripts/scriptPrice.js"></script>
   <script src="./scripts/scriptSchedule.js"></script>
   <script src="./scripts/scriptExperts.js"></script>
+  <script src="./scripts/scriptReview.js"></script>
 </body>
 </html>

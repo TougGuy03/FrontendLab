@@ -81,7 +81,7 @@ function updateProgress() {
 expertsPrevBtn.addEventListener("click", () => {
   activeExpertIndex--;
 
-  if (activeIndex < 0) {
+  if (activeExpertIndex < 0) {
     activeExpertIndex = experts.length - 1;
   }
 
