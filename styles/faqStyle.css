@@ -1,0 +1,115 @@
+.section_faq{
+    margin: 0 auto;
+     width: 100%;
+    max-width: 1200px;
+    display: flex;
+    gap: 72px;
+    flex-direction: column;
+}
+
+.faq_title{
+      font-family: New-YorkerC;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 1%;
+    color: var(--color-accent-green);
+    margin: 0;
+}
+
+.faq_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.faq_img{
+    width: 407px;
+    height: 501px;
+     border-top-left-radius: 244px;
+  border-top-right-radius: 244px;
+}
+
+.faq_main{
+    border-top: 1px solid #98958B;
+}
+
+.faq_item{
+    border-bottom: 1px solid #98958B;
+    width: 712px;
+
+}
+
+.faq_item p{
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: var(--color-text);
+    margin: 0 0 31px 55px;
+}
+
+summary{
+   font-family: Raleway;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    cursor: pointer;
+    display: flex;
+    padding: 24px 0;
+
+    color: var(--color-text);
+
+    transition: all 0.7s ease;
+
+}
+
+summary::marker{
+    content:"";
+}
+
+summary::before{
+     content: "+";
+    font-size: 20px;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #98958B;
+    border-radius: 50%;
+    margin-right: 24px;
+
+    transition: all 0.7s ease;
+}
+
+details[open] summary::before { 
+    content: "-";
+     border: 1px solid var(--color-accent-green);
+    background-color: var(--color-accent-green);
+    color: var(--color-background);
+}
+
+details[open] summary{ 
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
+}
+
+::details-content{
+    transition: height 0.5s ease,content-visibility 0.5s ease allow-discrete ;
+    height: 0;
+    overflow: clip;
+}
+
+:root{
+    interpolate-size:allow-keywords;
+}
+
+[open]::details-content{
+    height: auto;
+}
