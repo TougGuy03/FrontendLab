@@ -1,5 +1,94 @@
-.footer{
+footer{
     width:100%;
     background-color: var(--color-accent-green);
-    padding: 40px 0;
+    padding: 40px 200px;
+    align-items: center;
+     
 }
+
+.footer_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 46px;
+    column-gap: 32px;
+    align-items: center;
+    color: var(--color-background);
+}
+
+.footer_contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.footer_nav{
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    align-self: flex-start;
+
+    font-family: Raleway;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.footer_networks{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-self: flex-end;
+}
+
+.footer_consent{
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.footer_brand{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_brand_text{
+    font-family: Bookman Old Style;
+    font-weight: 300;
+    font-style: Regular;
+    font-size: 27.06px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.footer_policy{
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    justify-self: flex-end;
+
+
+}
+
+
+
+
