@@ -1,5 +1,6 @@
 let directions = [];
 let activeIndex = 0;
+let directionBtns = [];
 
 const buttons = document.getElementById("direction-buttons");
 const title = document.getElementById("direction-title");
@@ -10,6 +11,10 @@ const imgEl = document.getElementById("direction-img");
 const prevBtn = document.getElementById("direction-button-prev");
 const nextBtn = document.getElementById("direction-button-next");
 const progress = document.getElementById("direction-progress");
+const infoBlock = document.querySelector(".directions_inf");
+const infoImg = document.querySelector(".directions_inf");
+
+
 
 fetch("./data/data1.json")
   .then(function (response) {
@@ -33,28 +38,50 @@ function createButtons() {
     });
 
     buttons.appendChild(btn);
+     directionBtns.push(btn);
   }
 }
 
 function showDirection(index) {
+
   activeIndex = index;
   const direction = directions[index];
 
-  title.textContent = direction.title;
-  days.textContent = "Проходит по: " + direction.days;
-  duration.textContent = "Длительность: " + direction.duration;
+  infoBlock.style.opacity = 0;
+   imgEl.style.opacity = 0;
+  setTimeout(() => {
 
-  text.innerHTML = "";
-  for (let i = 0; i < direction.text.length; i++) {
-    const p = document.createElement("p");
-    p.textContent = direction.text[i];
-    text.appendChild(p);
-  }
-  
+
+    title.textContent = direction.title;
+    days.textContent = "Проходит по: " + direction.days;
+    duration.textContent = "Длительность: " + direction.duration;
+
+    text.innerHTML = "";
+    for (let i = 0; i < direction.text.length; i++) {
+      const p = document.createElement("p");
+      p.textContent = direction.text[i];
+      text.appendChild(p);
+    }
+
+    const percent = ((activeIndex + 1) / directions.length) * 100;
+    progress.style.width = percent + "%";
+
+    for (let i = 0; i < directionBtns.length; i++) {
+      directionBtns[i].classList.remove("direction_btn_active");
+    }
+    directionBtns[index].classList.add("direction_btn_active");
+    infoBlock.style.opacity = 1;
+    imgEl.style.opacity = 1;
+  }, 100);
+
+   imgEl.onload = () => {
+    setTimeout(() => {
+    imgEl.style.opacity = 1;
+    },200)
+  };
+
   imgEl.src = direction.imageUrl;
   imgEl.alt = direction.title;
-   const percent = ((activeIndex + 1) / directions.length) * 100;
-  progress.style.width = percent + "%";
 }
 
 prevBtn.addEventListener("click", () => {

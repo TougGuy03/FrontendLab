@@ -6,6 +6,8 @@
 }
 
 
+
+
 .main_section_title{
   position: absolute;
 
@@ -220,6 +222,32 @@
   stroke:  #FFFFFF;
 }
 
+.main_section_flower_img{
+  position: absolute;
+   z-index: -1;
+  top: 40px;
+  left: 1231px;
+}
+
+.main_section_flower_img img{
+  width:344px;
+  height:389px;
+}
+
+.main_section_flower_book{
+  position: absolute;
+  z-index: -1;
+  transform: scale(0.2);
+
+  top: 370px;
+  left: 540px;
+  transition: transform 0.6s ease;
+}
+
+.book_btn:hover + .main_section_flower_book{
+  transform: scale(1);
+}
+
 
 @media (max-width: 768px) {
     .home{
@@ -281,6 +309,18 @@
     .main_section_slider_line{
         max-width: 194.25px;
     }
+
+    .main_section_flower_img{
+      top: 40px;
+      left: 530px;
+  }
+
+  .main_section_flower_img img{
+      width: 277px;
+      height: 338px;
+  }
+
+
 }
 
     @media (max-width: 375px){

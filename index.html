@@ -63,6 +63,9 @@
                 тело в тонусе, а душу — в гармонии.
             </p>
             <button class="book_btn">Записаться</button>
+             <div class="main_section_flower_book">
+                <img src="./img/flowers/mainFlowerBook.png" alt="">
+            </div>
             <div class="main_section_mini_image">
                 <img src="./img/section1/miniImg.jpg" alt="">
             </div>
@@ -96,6 +99,9 @@
                     </button>
                 </div>
             </div>
+            </div>
+            <div class="main_section_flower_img">
+                <img src="./img/flowers/mainFlowerImg.svg" alt="">
             </div>
         </section>
     </div>
@@ -171,8 +177,10 @@
                 </div>
                 </div>
             </div>
-        
 
+        </div>
+        <div class="direction_flower">
+            <img src="./img/flowers/directionFlower.svg">
         </div>
     </section>
     <section class="section_price">
@@ -192,14 +200,15 @@
             </div>
         </div>
         <div class="price_main">
-            <div class="price_left">
+            <div class="price_list" id="price-list">
                 <div class="price_once" id="price-once"></div>
                 <button class="price_book_btn">Записаться</button>
             </div>
-            <div class="price_right">
-                <div class="price_list" id="price-list"></div>
-            </div>
         </div>
+          <div class="price_flower">
+            <img src="./img/flowers/priceFlower.svg">
+        </div>
+
     </section>
     <section class="section_schedule">
         <div class="schedule_header">
@@ -334,7 +343,12 @@
             <div class="faq_img_container">
                 <img  class="faq_img" id="faq-section-img" src="./img/section6/wmn_faq.jpg" alt="">
             </div>
-
+        </div>
+         <div class="faq_flower_right">
+            <img src="./img/flowers/faqFlowerRight.svg">
+        </div>
+         <div class="faq_flower_left">
+            <img src="./img/flowers/faqFlowerLeft.svg">
         </div>
     </section>
     <section class="section_findus">
@@ -346,7 +360,7 @@
         <form class="findus_form">
             <div class="findus_form_inputs">
                 <input class="findus_form_name" type="text" id="name" name="name" placeholder="Имя">
-                <input class="findus_form_phone" type="tel" id="phone" name="phone"  placeholder="Номер телефона">
+                <input class="findus_form_phone" type="tel" id="phone" name="phone" pattern="/^([+]?[0-9\s-\(\)]{3,25})*$/i;" placeholder="Номер телефона">
             </div>
             <label class="checkbox">
                 <input class="findus_checkbox" type="checkbox" name="accept" id="accept" required>
@@ -396,6 +410,9 @@
                         </svg>
                     </a>
                 </adress>
+                <div class="findus_flower">
+                    <img src="./img/flowers/findusFlower.svg">
+                </div>
             </div>
             
         </div>

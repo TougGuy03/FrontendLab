@@ -8,6 +8,8 @@ const carousel = document.getElementById("experts-carousel");
 const expertsPrevBtn = document.getElementById("experts-button-prev");
 const expertsNextBtn = document.getElementById("experts-button-next");
 const expertsProgress = document.getElementById("experts-progress");
+const expertsMain = document.querySelector(".experts_main");
+
 
 fetch("./data/data4.json")
   .then(function (response) {
@@ -58,18 +60,26 @@ function showExpert(index) {
   activeExpertIndex = index;
   const expert = experts[index];
 
-  mainImg.src = expert.photo;
-  mainImg.alt = expert.name;
+  expertsMain.style.opacity = "0";
+  carousel.style.opacity = "0";
 
-  card.innerHTML = `
-    <div class="experts_card_container">
-      <h3 class="experts_card_title">${expert.name}</h3>
-      <p class="experts_card_text">${expert.description}</p>
-    </div>
-  `;
+  setTimeout(() => {
+    mainImg.src = expert.photo;
+    mainImg.alt = expert.name;
 
-  updateProgress();
-  createCarousel();
+    card.innerHTML = `
+      <div class="experts_card_container">
+        <h3 class="experts_card_title">${expert.name}</h3>
+        <p class="experts_card_text">${expert.description}</p>
+      </div>
+    `;
+
+    updateProgress();
+    createCarousel();
+
+    expertsMain.style.opacity = "1";
+    carousel.style.opacity = "1";
+  }, 500);
 }
 
 

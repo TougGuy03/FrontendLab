@@ -3,8 +3,9 @@
      width: 100%;
     max-width: 1200px;
     display: flex;
-    gap: 72px;
+    gap: 50px;
     flex-direction: column;
+    position: relative;
 }
 
 .faq_title{
@@ -21,6 +22,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .faq_img{
@@ -112,4 +114,18 @@ details[open] summary{
 
 [open]::details-content{
     height: auto;
+}
+
+.faq_flower_right{
+    position: absolute;
+    top: -61px;
+    left: 962px;
+    z-index: -1;
+}
+
+.faq_flower_left{
+    position: absolute;
+    top: 496px;
+    left: -180px;
+    z-index: -1;
 }
