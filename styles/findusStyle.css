@@ -32,15 +32,14 @@
     justify-content: flex-start;
 }
 
-input{
-    border: none;           
+
+
+.findus_form_name, .findus_form_phone{
+      border: none;           
     border-bottom: 1px solid #98958B; 
     background: transparent;   
     outline: none; 
     color: var(--color-opacity);
-    }
-
-.findus_form_name, .findus_form_phone{
     width: 300px;
     font-family: Raleway;
     font-weight: 400;

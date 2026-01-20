@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/findusStyle.css" />
     <link rel="stylesheet" href="./styles/faqStyle.css" />
     <link rel="stylesheet" href="./styles/footerStyle.css" />
+     <link rel="stylesheet" href="./styles/modalStyle.css" />
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -451,11 +452,60 @@
            <a class="footer_policy" href="#">Политика конфиденциальности</a>
     </div>
   </footer>
+
+  <div class="modal" id="schedule-modal">
+  <div class="modal_overlay"></div>
+
+  <div class="modal_form">
+    <button class="modal_close">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.5 15.5L15.4999 0.5M15.5 15.5L0.500055 0.5" stroke="#98958B" stroke-linecap="round"/>
+        </svg>
+
+    </button>
+
+    <h2 class="modal_title">ЗАПИСАТЬСЯ<br>НА ТРЕНИРОВКУ</h2>
+
+    <form class="schedule_form" id="schedule-form">
+        <select class="schedule_form_select" required>
+            <option value="" disabled selected>Направление</option>
+            <option value="yoga">Йога</option>
+            <option value="pilates">Пилатес</option>
+            <option value="stretching">Стретчинг</option>
+            <option value="yoga_therapy">Йога-терапия</option>
+        </select>
+      <input class="schedule_form_phone"type="tel" placeholder="Номер телефона" required>
+      <textarea class="schedule_form_comment" placeholder="Комментарий"></textarea>
+
+      <button type="submit" class="modal_btn">ОТПРАВИТЬ</button>
+
+      <label class="modal_checkbox">
+        <input type="checkbox" required>
+        <span>Принимаю условия политики конфиденциальности</span>
+      </label>
+    </form>
+  </div>
+
+  <div class="modal_success">
+    <button class="modal_close">
+         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.5 15.5L15.4999 0.5M15.5 15.5L0.500055 0.5" stroke="#98958B" stroke-linecap="round"/>
+        </svg>
+    </button>
+
+    <h2 class="modal_title_succes">СПАСИБО!<br>ВАША ЗАЯВКА ПРИНЯТА</h2>
+    <p class="modal_text">
+      Наш менеджер свяжется с вами<br>в ближайшее время
+    </p>
+  </div>
+</div>
+
   <script src="./scripts/scriptMainSection.js"></script>
   <script src="./scripts/scriptDirections.js"></script>
   <script src="./scripts/scriptPrice.js"></script>
   <script src="./scripts/scriptSchedule.js"></script>
   <script src="./scripts/scriptExperts.js"></script>
   <script src="./scripts/scriptReview.js"></script>
+  <script src="./scripts/scriptModal.js"></script>
 </body>
 </html>
