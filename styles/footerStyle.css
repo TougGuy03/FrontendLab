@@ -57,6 +57,8 @@ footer{
     font-size: 10px;
     line-height: 100%;
     letter-spacing: 0%;
+    
+
 }
 
 .footer_brand{
@@ -86,8 +88,10 @@ footer{
     font-size: 10px;
     line-height: 100%;
     letter-spacing: 0%;
+}
 
-    justify-self: flex-end;
+.footer_privicy{
+    justify-self: end;
 }
 
 @media(max-width: 768px){
@@ -153,7 +157,7 @@ footer{
 
 }
 
-@media(max-width: 768px){
+@media(max-width: 375px){
     footer{
         background-color: var(--color-accent-green);
     }

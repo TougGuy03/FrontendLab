@@ -123,7 +123,7 @@ details[open] summary{
 
 .faq_flower_right{
     position: absolute;
-    top: -61px;
+    top: 1px;
     left: 962px;
     z-index: -1;
 }
@@ -156,6 +156,13 @@ details[open] summary{
     font-size: 14px;
 }
 
+.faq_flower_right{
+    position: absolute;
+    top: -80px;
+    left: 500px;
+    z-index: -1;
+}
+
 }
 @media(max-width: 375px){
     .faq_title{
@@ -185,6 +192,19 @@ details[open] summary{
 
 summary{
     font-size: 14px;
+}
+
+.faq_flower_right{
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    z-index: -1;
+}
+
+.faq_flower_right img{
+    width: 225px;
+    height: 225px;
+    
 }
 
 }

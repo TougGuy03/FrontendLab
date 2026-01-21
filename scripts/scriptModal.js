@@ -1,9 +1,11 @@
 const modal = document.getElementById('schedule-modal');
 const overlay = modal.querySelector('.modal_overlay');
-const closeBtn = modal.querySelector('.modal_close');
+const closeBtnSucces = document.getElementById('modal_close_succes');
+const closeBtnForm = document.getElementById('modal_close_form');
 const form = document.getElementById('schedule-form');
 const formBlock = modal.querySelector('.modal_form');
 const successBlock = modal.querySelector('.modal_success');
+
 
 
 function openModal() {
@@ -22,7 +24,8 @@ document.addEventListener('click', (e) => {
 });
 
 overlay.onclick = closeModal;
-closeBtn.onclick = closeModal;
+closeBtnSucces.onclick = closeModal;
+closeBtnForm.onclick = closeModal;
 
 form.onsubmit = (e) => {
   e.preventDefault();

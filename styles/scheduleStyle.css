@@ -48,6 +48,7 @@
     
 }
 
+
 .schedule_bottom{
     display: grid;
   grid-template-columns: 1.5fr 1fr; 
@@ -160,6 +161,11 @@
     cursor: pointer;
 }
 
+.schedule_free{
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
 @media(max-width: 768px){
     .schedule_img{
         display: none;
@@ -179,6 +185,10 @@
         width: 100%;
         max-width: 337px;
 
+    }
+    .schedule_free{
+        color: var(--color-accent-green);
+        font-weight: 400px;
     }
 }
 
@@ -248,6 +258,12 @@
         gap:24px;
     }
     .schedule_subtitle{
+        font-size: 13px;
+    }
+
+    .schedule_free{
+        color: var(--color-text);
+        font-weight: 400px;
         font-size: 13px;
     }
 }

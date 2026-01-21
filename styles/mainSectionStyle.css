@@ -51,8 +51,6 @@
   width:  clamp(111px, calc(111px + (155 - 111) * ((100vw - 768px) / 672)), 155px);
   height: clamp(111px, calc(111px + (155 - 111) * ((100vw - 768px) / 672)), 155px);
 
-  top:  clamp(351.42px, calc(351.42px + (471 - 351.42) * ((100vw - 768px) / 672)), 471px);
-  left: clamp(279px,    calc(279px    + (635 - 279)      * ((100vw - 768px) / 672)), 635px);
 
   border: none;
   cursor: pointer;
@@ -158,6 +156,10 @@
   transition: opacity 400ms ease;
 }
 
+
+.main_section_image{
+  position: relative;
+}
 .main_section_slider{
   display: flex;
   justify-content: space-between;
@@ -225,11 +227,13 @@
 .main_section_flower_img{
   position: absolute;
    z-index: -1;
-  top: 40px;
-  left: 1231px;
+  top: -100px;
+  left: 300px;
 }
 
 .main_section_flower_img img{
+   position: absolute;
+
   width:344px;
   height:389px;
 }
@@ -238,10 +242,15 @@
   position: absolute;
   z-index: -1;
   transform: scale(0.2);
-
-  top: 370px;
-  left: 540px;
   transition: transform 0.6s ease;
+  top:-80px;
+  left:-90px;
+}
+
+.book_btn_container{
+  position: absolute;
+  top: clamp(351.42px, calc(351.42px + (471 - 351.42) * ((100vw - 768px) / 672)), 471px);
+  left: clamp(279px, calc(279px + (635 - 279) * ((100vw - 768px) / 672)), 635px);
 }
 
 .book_btn:hover + .main_section_flower_book{
@@ -265,7 +274,7 @@
         left: 37px;
     }
 
-    .book_btn{
+    .book_btn_container{
         width: 111px;
         height: 111px;
         top: 351.42px;
@@ -311,8 +320,8 @@
     }
 
     .main_section_flower_img{
-      top: 40px;
-      left: 530px;
+      top: -150px;
+      left: 120px;
   }
 
   .main_section_flower_img img{
@@ -340,7 +349,7 @@
             left: 40px;
         }
 
-        .book_btn{
+        .book_btn_container{
             width: 111px;
             height: 111px;
             top: 255px;

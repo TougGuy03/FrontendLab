@@ -191,6 +191,8 @@
     display: none;
 }
 
+
+
 @media(max-width: 768px){
     .experts_slider[data-id="experts_slider_main"]{
     display: flex;
@@ -254,6 +256,13 @@
         .experts_header{
             flex-direction: column;
 
+        }
+
+        .experts_item_name{
+            flex-wrap: nowrap;
+            width: 100%;
+            font-size: 14px;
+            text-align: start;
         }
 
         .experts_main{

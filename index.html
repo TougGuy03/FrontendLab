@@ -62,9 +62,14 @@
                 Здесь мы поможем вам держать<br>
                 тело в тонусе, а душу — в гармонии.
             </p>
-            <button class="book_btn">Записаться</button>
-             <div class="main_section_flower_book">
-                <img src="./img/flowers/mainFlowerBook.png" alt="">
+            <div class="book_btn_container">
+                <button class="book_btn">
+                    Записаться
+    
+                </button>
+                 <div class="main_section_flower_book">
+                    <img src="./img/flowers/mainFlowerBook.png" alt="">
+                </div>
             </div>
             <div class="main_section_mini_image">
                 <img src="./img/section1/miniImg.jpg" alt="">
@@ -78,6 +83,9 @@
             <div class="main_section_media">
             <div class="main_section_image">
                 <img  id="main-section-img" src="./img/section1/mainImg1.jpg" alt="">
+                <div class="main_section_flower_img">
+                   <img src="./img/flowers/mainFlowerImg.svg" alt="">
+               </div>
             </div>
            <div class="main_section_slider">
                 <span class="main_section_slider_counter"><span class="process" id="main-section-counter">1</span>/3</span>
@@ -100,9 +108,7 @@
                 </div>
             </div>
             </div>
-            <div class="main_section_flower_img">
-                <img src="./img/flowers/mainFlowerImg.svg" alt="">
-            </div>
+           
         </section>
     </div>
   <main>
@@ -194,7 +200,7 @@
                     После покупки абонемента его необходимо <strong class="price_strong_activate">активировать в течении трех месяцев</strong> с момента приобретения (дата активации - первое занятие).
                 </p>
                  <p class="price_subtitle" data-id="price_2">
-                    Первая тренировка для новых клиентов бесплатная                
+                    Первая тренировка для новых клиентов <span class="free_cost">бесплатная </span>               
                 </p>
             </div>
         </div>
@@ -217,7 +223,7 @@
                 В НАШЕМ РАСПИСАНИИ
             </h2>
             <p class="schedule_subtitle">
-                Приглашаем на первое пробное занятие <strong>БЕСПЛАТНО!</strong> Не упустите возможность попробовать что‑то новое и полезное для вашего здоровья!
+                Приглашаем на первое пробное занятие <span class="schedule_free">бесплатно!</span> Не упустите возможность попробовать что‑то новое и полезное для вашего здоровья!
             </p>
         </div>
         <div class="schedule_bottom">
@@ -362,10 +368,10 @@
             </div>
             <div class="faq_img_container">
                 <img  class="faq_img" id="faq-section-img" src="./img/section6/wmn_faq.jpg" alt="">
-            </div>
-        </div>
-         <div class="faq_flower_right">
+                 <div class="faq_flower_right">
             <img src="./img/flowers/faqFlowerRight.svg">
+        </div>
+            </div>
         </div>
          <div class="faq_flower_left">
             <img src="./img/flowers/faqFlowerLeft.svg">
@@ -524,7 +530,7 @@
   <div class="modal_overlay"></div>
 
   <div class="modal_form">
-    <button class="modal_close">
+    <button class="modal_close" id="modal_close_form">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0.5 15.5L15.4999 0.5M15.5 15.5L0.500055 0.5" stroke="#98958B" stroke-linecap="round"/>
         </svg>
@@ -543,7 +549,7 @@
             <option value="yoga_flow">Флоу-йога</option>
             <option value="stretching">Стретчинг</option>
         </select>
-      <input class="schedule_form_phone"type="tel" placeholder="Номер телефона" required>
+      <input class="schedule_form_phone"type="tel" placeholder="Номер телефона" required pattern="^(\+7|8)\s?\(?\d{3}\)?[\s\-]?\d{3}[\s\-]?\d{2}[\s\-]?\d{2}$">
       <textarea class="schedule_form_comment" placeholder="Комментарий"></textarea>
 
       <button type="submit" class="modal_btn">ОТПРАВИТЬ</button>
@@ -556,7 +562,7 @@
   </div>
 
   <div class="modal_success">
-    <button class="modal_close">
+    <button class="modal_close" id="modal_close_succes">
          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0.5 15.5L15.4999 0.5M15.5 15.5L0.500055 0.5" stroke="#98958B" stroke-linecap="round"/>
         </svg>
