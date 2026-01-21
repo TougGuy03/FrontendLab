@@ -42,6 +42,13 @@ function showDay(index) {
       const day = scheduleDays[index];
     
       schedule.innerHTML = "";
+      schedule.innerHTML =`
+          <div class="schedule_row_head">
+                        <span>Направление</span>
+                        <span>Время</span>
+                        <span>Длительность</span>
+                    </div>
+      `
     
       for (let i = 0; i < day.items.length; i++) {
         const item = day.items[i];
@@ -50,9 +57,10 @@ function showDay(index) {
         row.className = "schedule_row";
     
         row.innerHTML = `
-          <div class="schedule_col_title">${item.title}</div>
+          <div class="schedule_col_title">${item.title}<span class="schedule_col_title_trainer">${item.trainer}</span></div>
           <div class="schedule_col_time">${item.time}</div>
           <div class="schedule_col_durationMin">${item.durationMin} мин</div>
+          <div class="schedule_col_duration_hour">${item.durationHour}</div>
           <div class="schedule_col_trainer">${item.trainer}</div>
           <div class="schedule_actions">
              <button class="schedule_book_btn" type="button" id="schedule-book-btn" >

@@ -109,7 +109,7 @@
     <section class="section_directions">
         <div class="directions_header">
             <h2 class="directions_title">
-                ВСЕ НАПРАВЛЕНИЯ В ОДНОМ<br>
+                ВСЕ НАПРАВЛЕНИЯ В ОДНОМ
                 АБОНЕМЕНТЕ
             </h2>
 
@@ -177,7 +177,6 @@
                 </div>
                 </div>
             </div>
-
         </div>
         <div class="direction_flower">
             <img src="./img/flowers/directionFlower.svg">
@@ -191,10 +190,10 @@
             </h2>
     
             <div class="price_subtitles_container">
-                <p class="price_subtitle">
-                    После покупки абонемента его необходимо <strong>активировать в течении трех месяцев</strong> с момента приобретения (дата активации - первое занятие).
+                <p class="price_subtitle" data-id="price_1">
+                    После покупки абонемента его необходимо <strong class="price_strong_activate">активировать в течении трех месяцев</strong> с момента приобретения (дата активации - первое занятие).
                 </p>
-                 <p class="price_subtitle">
+                 <p class="price_subtitle" data-id="price_2">
                     Первая тренировка для новых клиентов бесплатная                
                 </p>
             </div>
@@ -203,6 +202,7 @@
             <div class="price_list" id="price-list">
                 <div class="price_once" id="price-once"></div>
                 <button class="price_book_btn">Записаться</button>
+                <button class="price_review_btn">Оставить отзыв</button>
             </div>
         </div>
           <div class="price_flower">
@@ -213,7 +213,7 @@
     <section class="section_schedule">
         <div class="schedule_header">
             <h2 class="schedule_title">
-                НАЙДИ СВОЮ ПРАКТИКУ<br>
+                НАЙДИ СВОЮ ПРАКТИКУ
                 В НАШЕМ РАСПИСАНИИ
             </h2>
             <p class="schedule_subtitle">
@@ -240,7 +240,7 @@
         <div class="experts_container">
             <div class="experts_header">
                 <h2 class="experts_title">
-                   ЭКСПЕРТЫ В ОБЛАСТИ<br>
+                   ЭКСПЕРТЫ В ОБЛАСТИ
                    ТЕЛА И РАЗУМА
                 </h2>
                 <p class="experts_subtitle">
@@ -253,19 +253,14 @@
                         <img class="experts_current" id="experts-current" alt="">
                     </div>
                     <div class="experts_card" id="expert-card"></div>
-                </div>
-                <div class="experts_slid">
-                    <div class="experts_carousel" id="experts-carousel">
-    
-                    </div>
-                    <div class="experts_slider">
+                    <div class="experts_slider" data-id="experts_slider_main">
                         <div class="experts_slider_btns">
-                        <button class="slider_btn" type="button" id="experts-button-prev" >
+                        <button class="slider_btn" type="button" id="experts-main-prev" >
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.0739 4.91675L6.31682 9.67384C6.26744 9.72321 6.26744 9.80326 6.31682 9.85264L11.0739 14.6097" stroke="#789776" stroke-linecap="round"/>
                         </svg>
                         </button>
-                        <button class="slider_btn" type="button" id="experts-button-next">
+                        <button class="slider_btn" type="button" id="experts-main-next">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.75991 4.91687L13.517 9.67396C13.5664 9.72334 13.5664 9.80339 13.517 9.85276L8.75991 14.6099" stroke="#789776" stroke-linecap="round"/>
                         </svg>
@@ -273,7 +268,31 @@
                     </div>
     
                     <div class="experts_slider_line">
-                        <div class="experts_slider_progress" id="experts-progress"></div>
+                        <div class="experts_slider_progress" id="experts-main-progress"></div>
+                    </div>
+                </div>
+                    
+                </div>
+                <div class="experts_slid">
+                    <div class="experts_carousel" id="experts-carousel">
+    
+                    </div>
+                    <div class="experts_slider" data-id="experts_slider_carousel">
+                        <div class="experts_slider_btns">
+                        <button class="slider_btn" type="button" id="experts-car-prev" >
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.0739 4.91675L6.31682 9.67384C6.26744 9.72321 6.26744 9.80326 6.31682 9.85264L11.0739 14.6097" stroke="#789776" stroke-linecap="round"/>
+                        </svg>
+                        </button>
+                        <button class="slider_btn" type="button" id="experts-car-next">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.75991 4.91687L13.517 9.67396C13.5664 9.72334 13.5664 9.80339 13.517 9.85276L8.75991 14.6099" stroke="#789776" stroke-linecap="round"/>
+                        </svg>
+                        </button>
+                    </div>
+    
+                    <div class="experts_slider_line">
+                        <div class="experts_slider_progress" id="experts-car-progress"></div>
                     </div>
                     </div>
                 </div>
@@ -282,8 +301,8 @@
     </section>
     <section class="section_reviews">
         <div class="reviews_header">
-            <h2 class="experts_title">
-                   НАШИ ДОВОЛЬНЫЕ<br>
+            <h2 class="review_title">
+                   НАШИ ДОВОЛЬНЫЕ
                    КЛИЕНТЫ
             </h2>
             <button class="review_btn" type="button" id="review-button" >ОСТАВИТЬ ОТЗЫВ</button>
@@ -309,6 +328,7 @@
                 <div class="reviews_slider_progress" id="reviews-progress"></div>
             </div>
         </div>
+        <button class="review_btn_twice" type="button" id="review-button" >ОСТАВИТЬ ОТЗЫВ</button>
     </section>
     <section class="section_faq">
         <div class="faq_header">
@@ -358,16 +378,40 @@
             </h2>
         </div>
         <form class="findus_form">
+            <p class="contactus">Свяжитесь с нами</p>
             <div class="findus_form_inputs">
                 <input class="findus_form_name" type="text" id="name" name="name" placeholder="Имя">
                 <input class="findus_form_phone" type="tel" id="phone" name="phone" pattern="/^([+]?[0-9\s-\(\)]{3,25})*$/i;" placeholder="Номер телефона">
             </div>
+            <input class="findus_form_question" type="text" id="question" name="question" placeholder="Ваш вопрос">
             <label class="checkbox">
                 <input class="findus_checkbox" type="checkbox" name="accept" id="accept" required>
                 Принимаю условия политики конфиденциальности
             </label>
 
             <button class="findus_sbmt_btn" type="submit">Отправить</button>
+            <button class="findus_review_btn" type="submit">Оставить отзыв</button>
+            <address class="network_twice">
+                    <a href="#">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.5781 17.1265L17.5771 17.1128C17.5282 16.2044 17.2579 15.6783 16.9844 15.3022C16.9211 15.2153 16.859 15.1375 16.8096 15.0757C16.7569 15.0098 16.7205 14.9645 16.6924 14.9233C16.6442 14.8529 16.6462 14.8344 16.6465 14.8306C16.6465 14.8347 16.6463 14.824 16.6592 14.811C16.6646 14.8056 16.6724 14.8 16.6836 14.7954C16.6945 14.7909 16.7136 14.7857 16.7432 14.7856H20.4287C20.4977 14.7857 20.5342 14.7944 20.5498 14.7993C20.5548 14.8092 20.5652 14.8309 20.5742 14.8726C20.5879 14.9356 20.5977 15.0272 20.5977 15.1567V19.8481C20.5977 20.4344 20.8791 21.0249 21.4629 21.0249C22.0019 21.0248 22.3942 20.6723 22.9111 20.147L22.9287 20.1274C23.8129 19.1307 24.5557 17.8794 25.0723 16.8931C25.3322 16.3969 25.5374 15.9609 25.6787 15.6489C25.7494 15.4929 25.8046 15.3678 25.8418 15.2808C25.8603 15.2375 25.8741 15.2035 25.8838 15.1802C25.8887 15.1685 25.8929 15.1591 25.8955 15.1528L25.8965 15.1509C25.9509 15.0238 26.0119 14.9399 26.082 14.8862C26.1453 14.8378 26.2521 14.7857 26.4551 14.7856H28.8008C28.9559 14.7857 29.0294 14.8083 29.0596 14.8218C29.0597 14.8236 29.0605 14.8255 29.0605 14.8276C29.0619 14.8622 29.0563 14.9226 29.0293 15.0132L29.0234 15.0317L29.0195 15.0513C28.9618 15.3196 28.7607 15.7764 28.4502 16.353C28.1484 16.9136 27.7702 17.5399 27.3975 18.1294C27.0254 18.7178 26.6612 19.2639 26.3906 19.6636C26.2555 19.8632 26.1443 20.0266 26.0664 20.1392C26.0275 20.1955 25.9962 20.2395 25.9756 20.269C25.9654 20.2836 25.9573 20.2948 25.9521 20.3022C25.9496 20.3059 25.9475 20.3092 25.9463 20.311L25.9453 20.313L25.9355 20.3257L25.9277 20.3394C25.8189 20.5164 25.6567 20.771 25.6328 21.0688C25.6062 21.4014 25.7491 21.6834 25.9463 21.9438V21.9448C25.9475 21.9465 25.949 21.948 25.9502 21.9497C25.9526 21.9529 25.9546 21.9563 25.957 21.9595V21.9585C26.1166 22.1778 26.4178 22.4739 26.6973 22.7505C27.0047 23.0548 27.3297 23.3768 27.5859 23.6821L27.5938 23.6909C28.0941 24.2591 28.5239 24.7737 28.8525 25.2231C29.1849 25.6776 29.3857 26.0297 29.4668 26.2808C29.5001 26.3985 29.5029 26.4741 29.498 26.5161C29.4937 26.5528 29.4848 26.5634 29.4834 26.5649C29.4779 26.5714 29.4043 26.6421 29.1338 26.6421H26.79C26.642 26.6421 26.5389 26.6136 26.4414 26.562C26.3329 26.5045 26.2086 26.4056 26.0342 26.229C25.8578 26.0503 25.6609 25.8243 25.3916 25.5229C25.127 25.2269 24.806 24.8741 24.4004 24.4644L24.3936 24.4575C22.9949 23.0967 22.2715 22.7857 21.7109 22.7856C21.4644 22.7856 21.0878 22.8105 20.8359 23.1265C20.7205 23.2714 20.6652 23.438 20.6357 23.5913C20.6064 23.7442 20.5967 23.9153 20.5967 24.0972V26.2212C20.5967 26.4708 20.5552 26.4753 20.5381 26.4868C20.4442 26.5505 20.1673 26.6431 19.4229 26.6431C17.139 26.6429 14.551 25.2336 12.6836 22.5259L12.6807 22.521C11.2494 20.4948 10.3426 18.7219 9.79492 17.3862C9.52099 16.7181 9.3375 16.1608 9.22363 15.7388C9.10606 15.303 9.07133 15.0437 9.07129 14.9556C9.07129 14.831 9.09699 14.8208 9.08398 14.8345C9.06928 14.8496 9.1109 14.7867 9.375 14.7866H11.7197C11.9413 14.7866 12.0077 14.833 12.0439 14.8667C12.0906 14.9101 12.1467 14.9926 12.2178 15.1646L12.2939 15.3687C12.8796 17.0911 13.6667 18.7072 14.4141 19.8999C14.7867 20.4946 15.1584 20.9982 15.5 21.3599C15.6703 21.5402 15.8447 21.6974 16.0186 21.813C16.1829 21.9222 16.3993 22.0297 16.6426 22.0298C16.7497 22.0298 16.8968 22.0182 17.0449 21.9507C17.2067 21.8768 17.3286 21.7555 17.4111 21.605C17.5508 21.3501 17.5781 21.0034 17.5781 20.6265V17.1265Z" fill="#789776" stroke="#789776"/>
+                        <circle cx="20" cy="20" r="19.5" stroke="#789776"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0859 12.9068C26.1634 11.9827 25.0658 11.2499 23.8567 10.7509C22.6476 10.2519 21.3511 9.99672 20.0421 10C14.5535 10 10.0854 14.4458 10.0832 19.9106C10.0832 21.6571 10.5413 23.3617 11.4121 24.8653L10 30L15.279 28.6211C16.7392 29.4122 18.3751 29.8271 20.0377 29.8278H20.0421C25.5296 29.8278 29.9977 25.382 30 19.9172C30.0037 18.615 29.7481 17.325 29.248 16.1217C28.7478 14.9185 28.013 13.8258 27.0859 12.9068ZM20.0421 28.1552H20.0388C18.5563 28.1554 17.1011 27.7584 15.8258 27.006L15.5241 26.8271L12.3916 27.6452L13.2268 24.6059L13.0305 24.2946C12.2016 22.9813 11.7629 21.4615 11.7648 19.9106C11.7671 15.3688 15.4797 11.6737 20.0455 11.6737C21.1328 11.6713 22.2098 11.8835 23.2142 12.2982C24.2186 12.7128 25.1304 13.3216 25.8968 14.0892C26.6673 14.8532 27.278 15.7617 27.6937 16.762C28.1093 17.7623 28.3216 18.8347 28.3183 19.9172C28.3161 24.4591 24.6034 28.1552 20.0421 28.1552ZM24.5823 21.985C24.3327 21.8602 23.1103 21.2619 22.8818 21.1791C22.6544 21.0963 22.4892 21.0554 22.3228 21.3027C22.1564 21.55 21.6794 22.1075 21.5341 22.2731C21.3888 22.4387 21.2435 22.4586 20.995 22.335C20.7465 22.2113 19.9445 21.9497 18.9939 21.1062C18.254 20.4493 17.7548 19.639 17.6095 19.3906C17.4642 19.1422 17.594 19.0086 17.7193 18.885C17.8314 18.7746 17.9678 18.5957 18.0921 18.4511C18.2163 18.3065 18.2573 18.2038 18.3405 18.0382C18.4237 17.8726 18.3827 17.728 18.3195 17.6043C18.2573 17.4796 17.7593 16.2608 17.5518 15.7651C17.3511 15.2849 17.1459 15.3489 16.9928 15.3423C16.8342 15.3358 16.6756 15.3329 16.5169 15.3334C16.3907 15.3366 16.2666 15.3657 16.1522 15.4189C16.0379 15.4721 15.9358 15.5483 15.8525 15.6425C15.6239 15.8909 14.9817 16.4893 14.9817 17.7081C14.9817 18.9269 15.8735 20.1049 15.9978 20.2705C16.122 20.4361 17.7526 22.9366 20.2485 24.0097C20.843 24.2647 21.3067 24.4171 21.6672 24.5319C22.2629 24.7207 22.8053 24.6931 23.2346 24.6302C23.7127 24.5595 24.7066 24.0318 24.914 23.4533C25.1214 22.8748 25.1214 22.3791 25.0593 22.2753C24.9972 22.1716 24.8297 22.1086 24.5823 21.985Z" fill="#789776"/>
+                        <circle cx="20" cy="20" r="19.5" stroke="#789776"/>
+                        </svg>
+
+                    </a>
+                    <a href="#">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.2213 11.5412L9.50517 18.5234C8.29611 19.0197 8.30311 19.709 9.28334 20.0164L13.8318 21.4665L24.3556 14.6805C24.8532 14.371 25.3078 14.5375 24.9341 14.8765L16.4078 22.741H16.4058L16.4078 22.7421L16.094 27.5337C16.5537 27.5337 16.7565 27.3182 17.0143 27.0639L19.2236 24.8683L23.819 28.3374C24.6663 28.8143 25.2748 28.5692 25.4857 27.5357L28.5023 13.0056C28.8111 11.7403 28.0297 11.1674 27.2213 11.5412Z" fill="#789776"/>
+                        <circle cx="20" cy="20" r="19.5" stroke="#789776"/>
+                        </svg>
+                    </a>
+                </address>
         </form>
         <div class="findus_map_container">
             <img src="./img/section7/map.png" class="findus_map">
@@ -409,7 +453,7 @@
                         <circle cx="20" cy="20" r="19.29" stroke="#FEFBF7" stroke-width="1.42"/>
                         </svg>
                     </a>
-                </adress>
+                </address>
                 <div class="findus_flower">
                     <img src="./img/flowers/findusFlower.svg">
                 </div>
@@ -431,7 +475,7 @@
             <a href="#">Направления</a>
             <a href="#">Прайс</a>
             <a href="#">Расписание</a>
-            <a href="#">Эксперты</a>
+            <a href="#" class="nav_experts">Эксперты</a>
             <a href="#">Отзывы</a>
             <a href="#">FAQ</a>
             <a href="#">Контакты</a>
@@ -466,7 +510,13 @@
     
             <span class="footer_brand_text">BALANCE</span>
           </div>
-           <a class="footer_policy" href="#">Политика конфиденциальности</a>
+          <div class="footer_privicy">
+            <a class="footer_policy" href="#">Политика конфиденциальности</a>
+             <div class="footer_consent_twice">
+            Согласие на обработку персональных данных
+          </div>
+          </div>
+           
     </div>
   </footer>
 
@@ -486,10 +536,12 @@
     <form class="schedule_form" id="schedule-form">
         <select class="schedule_form_select" required>
             <option value="" disabled selected>Направление</option>
-            <option value="yoga">Йога</option>
+            <option value="yoga">Кундалини-йога</option>
+            <option value="yoga_hatha">Хатха-йога</option>
             <option value="pilates">Пилатес</option>
+            <option value="health_back">Здоровая спина</option>
+            <option value="yoga_flow">Флоу-йога</option>
             <option value="stretching">Стретчинг</option>
-            <option value="yoga_therapy">Йога-терапия</option>
         </select>
       <input class="schedule_form_phone"type="tel" placeholder="Номер телефона" required>
       <textarea class="schedule_form_comment" placeholder="Комментарий"></textarea>

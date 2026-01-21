@@ -1,7 +1,7 @@
 footer{
     width:100%;
     background-color: var(--color-accent-green);
-    padding: 40px 200px;
+    padding: 40px 30px;
     align-items: center;
      
 }
@@ -66,6 +66,9 @@ footer{
     align-items: center;
     justify-content: center;
 }
+.footer_consent_twice{
+    display: none;
+}
 
 .footer_brand_text{
     font-family: Bookman Old Style;
@@ -85,6 +88,114 @@ footer{
     letter-spacing: 0%;
 
     justify-self: flex-end;
+}
+
+@media(max-width: 768px){
+    footer{
+        background-color: #98958B;
+    }
+
+    .footer_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "nav brand contacts"
+        "networks . consent"
+    ;
+}
+
+.footer_consent_twice{
+    display: block;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.footer_nav{
+    flex-direction: column;
+    grid-area: nav;
+}
+
+.footer_brand{
+    grid-area: brand;
+    align-self: end;
+  justify-self: center;
+}
+
+.footer_contacts{
+    grid-area: contacts;
+    align-self: start ;
+    text-decoration: none;
+}
+
+.footer_networks{
+    grid-area: networks;
+    justify-self: flex-start;
+    
+}
+
+.footer_privicy{
+    grid-area: consent;
+    text-decoration: none;
+
+}
+.footer_consent{
+    display: none;
+}
+.nav_experts{
+    display: none;
+}
+
+}
+
+@media(max-width: 768px){
+    footer{
+        background-color: var(--color-accent-green);
+    }
+
+      .footer_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "brand networks"
+        "nav contacts"
+        "nav consent"
+    ;
+}
+
+.nav_experts{
+    display: block;
+}
+
+.footer_brand_text{
+    font-size: 16px;
+}
+
+.footer_brand svg{
+    width: 47px;
+    height: 47px;
+}
+
+.footer_privicy{
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+    align-self: end;
+
+}
+
+.footer_policy{
+    order:2;
+    font-size: 9px;
+}
 
 
 }

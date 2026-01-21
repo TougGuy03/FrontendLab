@@ -5,7 +5,7 @@
     display: flex;
     gap: 72px;
     flex-direction: column;
-    padding: 9px 0 4px;
+    padding: 9px 30px 4px;
 }
 
 .schedule_header{
@@ -13,6 +13,14 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.schedule_col_title_trainer{
+    display: none;
+}
+
+  .schedule_col_duration_hour{
+        display: none;
+    }
 
 .schedule_title{
     font-family: New-YorkerC;
@@ -24,6 +32,10 @@
     margin: 0;
 }
 
+.schedule_row_head{
+    display: none;
+}
+
 .schedule_subtitle{
     font-family: Raleway;
     font-weight: 400;
@@ -32,13 +44,15 @@
     letter-spacing: 0%;
     color: var(--color-text);
     max-width: 404px;
+    margin: 0;
     
 }
 
 .schedule_bottom{
-    display: flex;
-    flex-direction: row;
-    gap: 81px;
+    display: grid;
+  grid-template-columns: 1.5fr 1fr; 
+  gap: 81px;
+  align-items: start;
 }
 
 .schedule_img{
@@ -82,6 +96,7 @@
     line-height: 100%;
     letter-spacing: 5%;
     cursor: pointer;
+    opacity: 50%;
 }
 
 .tab-active{
@@ -143,5 +158,97 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+}
+
+@media(max-width: 768px){
+    .schedule_img{
+        display: none;
+    }
+
+    .schedule_bottom{
+        display: flex;
+        justify-content: center;
+    }
+    .schedule_title{
+        font-size: 30px;
+        max-width: 341px;
+
+    }
+    .schedule_subtitle{
+        font-size: 14px;
+        width: 100%;
+        max-width: 337px;
+
+    }
+}
+
+@media(max-width: 375px){
+    .schedule_row_head{
+        display: grid;
+        grid-template-columns: 
+            1.2fr 0.6fr 2fr;
+
+        font-family: Raleway;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: var(-color-text);
+        opacity: 0.6;
+
+    }
+    .schedule_col_title_trainer{
+        display: block;
+        font-family: Raleway;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #98958B;
+
+    }
+
+    .schedule_col_trainer{
+        display: none;
+    }
+
+    .schedule_row{
+        grid-template-columns:
+    2fr
+    1fr
+    1fr
+    0.5fr
+    }
+
+    .schedule_tabs{
+        overflow-x: auto;
+    }
+
+    .schedule_col_title{
+        font-size: 14px;
+
+    }
+      .schedule_col_time{
+        font-size: 14px;
+        
+    }
+
+    .schedule_col_durationMin{
+        display: none;
+    }
+
+    .schedule_col_duration_hour{
+        display: block;
+        font-size: 10px;
+    }
+
+    .schedule_header{
+        flex-direction: column;
+        gap:24px;
+    }
+    .schedule_subtitle{
+        font-size: 13px;
+    }
 }
 

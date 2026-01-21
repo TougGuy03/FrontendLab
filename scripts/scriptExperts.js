@@ -5,9 +5,13 @@ const mainImg = document.getElementById("experts-current");
 const card = document.getElementById("expert-card");
 const carousel = document.getElementById("experts-carousel");
 
-const expertsPrevBtn = document.getElementById("experts-button-prev");
-const expertsNextBtn = document.getElementById("experts-button-next");
-const expertsProgress = document.getElementById("experts-progress");
+const mainPrevBtn = document.getElementById("experts-main-prev");
+const mainNextBtn = document.getElementById("experts-main-next");
+const mainProgressExperts = document.getElementById("experts-main-progress");
+
+const carPrevBtn = document.getElementById("experts-car-prev");
+const carNextBtn = document.getElementById("experts-car-next");
+const carProgress = document.getElementById("experts-car-progress");
 const expertsMain = document.querySelector(".experts_main");
 
 
@@ -83,28 +87,25 @@ function showExpert(index) {
 }
 
 
+
 function updateProgress() {
   const percent = ((activeExpertIndex + 1) / experts.length) * 100;
-  expertsProgress.style.width = percent + "%";
+  mainProgressExperts.style.width = percent + "%";
+  carProgress.style.width = percent + "%";
 }
 
-expertsPrevBtn.addEventListener("click", () => {
-  activeExpertIndex--;
-
-  if (activeExpertIndex < 0) {
-    activeExpertIndex = experts.length - 1;
-  }
-
+function expertsPrev() {
+  activeExpertIndex = (activeExpertIndex - 1 + experts.length) % experts.length;
   showExpert(activeExpertIndex);
-});
+}
 
-expertsNextBtn.addEventListener("click", () => {
-  activeExpertIndex++;
-
-  if (activeExpertIndex >= experts.length) {
-    activeExpertIndex = 0;
-  }
-
+function expertsNext() {
+  activeExpertIndex = (activeExpertIndex + 1) % experts.length;
   showExpert(activeExpertIndex);
-});
+}
+
+mainPrevBtn.addEventListener("click",  expertsPrev);
+mainNextBtn.addEventListener("click", expertsNext);
+carPrevBtn.addEventListener("click",  expertsPrev);
+carNextBtn.addEventListener("click", expertsNext);
 

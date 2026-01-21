@@ -8,6 +8,19 @@
   margin:0 auto 100px;
   display:flex;
   justify-content:space-between;
+  padding: 0 30px 0;
+}
+
+.review_title{
+  font-family: New-YorkerC;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 130%;
+  letter-spacing: 1%;
+  max-width: 511px;
+  color: var(--color-accent-green);
+  margin: 0;
+
 }
 
 .review_btn{
@@ -198,6 +211,7 @@
 .review_slid{
   width:1200px;
   margin:28px auto 0;
+  padding: 0 30px 0;
 }
 
 .review_slider{
@@ -227,4 +241,93 @@
    width: 0%;
   background: var(--color-accent-green); 
   transition: width 0.3s ease;
+}
+
+.review_btn_twice{
+  display: none;
+}
+
+@media(max-width: 768px){
+  .review_btn{
+    display: none;
+  }
+  .review_title {
+    font-size: 32px;
+    max-width: 340px;
+  }
+
+  .review_card_is_active{
+    width: 338px;
+  }
+
+}
+
+@media(max-width: 375px){
+
+  .reviews_header{
+    padding: 0 24px 0;
+  }
+  .review_btn_twice{
+  display: block;
+
+  width: 327px;
+    height: 75px;
+    border:none;
+    cursor:pointer;
+    align-items: center;
+    border-radius:53px;
+    white-space: nowrap;
+
+    background:var(--color-accent-green);
+    color:#ffffff;
+
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    align-self: center;
+
+}
+
+ .review_title {
+    font-size: 28px;
+    max-width: 340px;
+  }
+
+   .review_card{
+    width: 223px;
+  }
+
+  .review_card_is_active{
+    width: 300px;
+  }
+
+  .review_card_name{
+    font-size: 16px;
+
+  }
+
+  .review_card_text{
+    font-size: 13px;
+  }
+
+  .review_card_more{
+    opacity: 0;
+  }
+
+  .review_slider{
+    width: 375px; 
+    margin-bottom: 16px;
+    
+  }
+  .reviews_slider_line{
+    max-width: 230px;
+  }
+
+  .review_carousel{
+    transform: translateX(15%);
+  }
+
+  
 }

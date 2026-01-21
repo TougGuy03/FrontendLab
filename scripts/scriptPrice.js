@@ -18,7 +18,7 @@ function renderPrices() {
 
     if (item.id === "single") {
       priceOnce.innerHTML = `
-        <div class="price_card_single">
+        <div class="price_card_single"  data-id="${item.id}">
           <div class="price_single_value">${item.price}₽</div>
           <div class="price_single_divider"></div>
           <div class="price_single_label"><span class="single_count">1</span> занятие</div>
@@ -27,7 +27,7 @@ function renderPrices() {
     }
     else {
       priceList.innerHTML += `
-        <div class="price_card">
+        <div class="price_card"  data-id="${item.id}">
           <div class="price_card_top">
             <div class="price_card_left_part">
               ${item.count ? `<div class="price_count">${item.count}</div>` : ""}

@@ -5,6 +5,7 @@
     display: flex;
     gap: 60px;
     flex-direction: column;
+    padding: 0 37px 0;
 }
 
 .findus_title{
@@ -18,7 +19,9 @@
 }
 
 .findus_form{
-    display: flex;
+    display: grid;
+        grid-template-columns: 
+            2fr 0.3fr 0.3fr;
     flex-direction: row;
     width: 100%;
     gap:53px;
@@ -34,19 +37,37 @@
 
 
 
-.findus_form_name, .findus_form_phone{
+.findus_form_name, .findus_form_phone, .findus_form_question{
       border: none;           
     border-bottom: 1px solid #98958B; 
     background: transparent;   
     outline: none; 
     color: var(--color-opacity);
-    width: 300px;
+    width: 100%;
     font-family: Raleway;
     font-weight: 400;
     font-size: 14px;
     line-height: 125%;
     letter-spacing: 0%;
     color: var(--color-opacity);
+    opacity: 0.2;
+}
+
+.findus_form_question{
+      border: none;           
+    border-bottom: 1px solid #98958B; 
+    background: transparent;   
+    outline: none; 
+    color: var(--color-opacity);
+    width: 100%;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+    letter-spacing: 0%;
+    color: var(--color-opacity);
+    opacity: 0.2;
+    display: none;
 }
 
 .checkbox{
@@ -65,6 +86,9 @@
     gap: 6px;
 
 }
+.contactus{
+    display: none;
+}
 
 .findus_sbmt_btn{
     width: 285px;
@@ -82,7 +106,7 @@
 }
 
 .findus_map_container{
-    width: 1200px;
+    max-width: 1200px;
     height:478px;
     overflow: hidden;
     position: relative;
@@ -94,7 +118,6 @@
     object-fit: cover;
     z-index: 10;
     opacity: 0.5;
-
 }
 .findus_card{
     position: absolute;
@@ -111,6 +134,30 @@
 
 }
 
+
+.findus_review_btn{
+      width: 240px;
+    height: 55px;
+    border: 1px solid var(--color-accent-green);
+    cursor:pointer;
+    align-items: center;
+    border-radius:53px;
+    white-space: nowrap;
+
+    background:transparent;
+    color:var(--color-accent-green);
+    text-transform: uppercase;
+
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    display: none;
+}
+.network_twice{
+    display: none;
+}
 .findus_contacts{
      list-style: none;   
   margin: 0;
@@ -126,8 +173,6 @@
     letter-spacing: 0%;
 
     color: var(--color-background);
-
-
 }
 
 a{
@@ -145,6 +190,145 @@ a{
     position: absolute;
     top: 126px;
     left: 225px;
+}
+
+@media(max-width: 768px){
+
+    .findus_form{
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .findus_sbmt_btn{
+        display: none;
+        
+    }
+    .findus_review_btn{
+        display: block;
+    }
+
+    .checkbox{
+        justify-self: flex-end;
+    }
+    .network_twice{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        gap: 10px
+    }
+
+    .findus_card{
+        left: 0;
+        top:109px;
+        height: 273px;
+    }
+
+    .findus_contacts{
+        gap: 16px;
+    }
+
+    .findus_title{
+        font-size: 32px;
+    }
+}
+
+@media(max-width: 375px){
+    .findus_title{
+        font-size: 26px;
+    }
+    .contactus{
+        display: block;
+        grid-area: question;
+    }
+      .findus_form{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+            "contactus contactus"
+            "inputs inputs"
+            "question question"
+            "checkbox checkbox"
+            "btn network"
+        ;
+        gap: 20px 10px;
+    }
+
+
+    .contactus{
+        font-family: Raleway;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color:var(--color-text);
+    grid-area: contactus;
+    margin:0;
+
+    }
+
+    .findus_title{
+        font-size: 26px;
+    }
+
+    .findus_form_inputs{
+        grid-area: inputs;
+    }
+
+    .checkbox{
+        grid-area: checkbox;
+        
+        width: 209px;
+        justify-self: start;
+    }
+
+    .findus_review_btn{
+        display: none;
+    }
+
+    .findus_sbmt_btn{
+        display: block;
+        grid-area: btn;
+        max-width: 154px;
+    }
+
+    .network_twice{
+        grid-area: network;
+        display: flex;
+    }
+
+    .findus_form_question{
+        display: block;
+        grid-area: question;
+    }
+
+    .findus_form_inputs{
+        gap: 20px;
+    }
+
+    .findus_form_name, .findus_form_phone{
+        width: 154px;
+    }
+    .findus_form_question{
+        width: 327px;
+    }
+
+    .findus_card{
+        width: 327px;
+        height: 177px;
+        top:0;
+        align-items: center;
+        padding: 34px;
+        
+    }
+    .network{
+        display: none;
+    }
+
+    .findus_contacts{
+        align-self: start;
+        font-size: 14px;
+    }
+    
 }
 
 

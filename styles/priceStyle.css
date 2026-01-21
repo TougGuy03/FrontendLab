@@ -5,14 +5,14 @@
     display: flex;
     gap: 72px;
     flex-direction: column;
-    padding: 9px 0 14px;
+    padding: 9px 23px 14px;
     position: relative;
 }
 
 .price_header{
     display: flex;
     flex-direction: row;
-    gap: 262px;
+    justify-content: space-between;
 }
 
 .price_title{
@@ -39,6 +39,7 @@
     line-height: 125%;
     letter-spacing: 0%;
     color: var(--color-text);
+    margin: 0;
 }
 
 .price_left{
@@ -92,7 +93,7 @@
 .price_list{
     display: grid;
   grid-template-columns: 0.5fr 1fr 1.2fr;
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
   column-gap: 80px;
   row-gap: 48px;
 }
@@ -208,4 +209,195 @@
     top: 340px;
     left: 962px;
     z-index: -1;
+}
+
+.price_review_btn{
+    width: 240px;
+    height: 55px;
+    border:1px solid var(--color-accent-green);
+    cursor:pointer;
+    align-items: center;
+    border-radius:53px;
+    white-space: nowrap;
+
+    background: transparent;
+    color: var(--color-accent-green);
+
+    font-family: Raleway;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    text-transform: uppercase;
+
+    display: none;
+}
+
+@media(max-width:900px){
+
+    .section_price{
+        padding-left:35px;
+        padding-right: 35px;
+    }
+    .price_list{
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  grid-template-rows: repeat(3, auto);
+}
+}
+
+@media(max-width:768px){
+        .price_list{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    row-gap: 20px;
+    column-gap: 32px;
+   
+
+    }
+    .price_book_btn{
+        display: none;
+    }
+    .price_title{
+        font-size: 30px;
+        max-width: 336px;
+
+    }
+    .price_subtitle{
+        font-size: 12px;
+        max-width: 310px;
+        text-align: flex-end;
+        
+    }
+    .price_strong_activate{
+        color: var(--color-accent-green);
+    }
+    .price_card{
+        max-width: 338px;
+    }
+
+    .price_card[data-id="single"]{
+        order: 1;
+    }
+    .price_card[data-id="8lessons"]{
+        order:2;
+    }
+    .price_card[data-id="12lessons"]{
+        order:3;
+    }
+    .price_card[data-id="unlimited"]{
+        order:4;
+    }
+    .price_card[data-id="4lessons"]{
+        order:5;
+    }
+
+    .price_review_btn{
+            display: block;
+            order: 6;
+            align-self: flex-end;
+            justify-self: end;
+    }
+
+    .price_single_value, .single_count, .price_count, .price_card_one, .price_card_total, .price_one_price--number{
+        font-size: 32px;
+    }
+    .price_single_label, .price_label, .price_one_label, .price_one_price--text{
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 375px){
+         .price_list{
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5, auto);
+            column-gap: 32px;
+             grid-template-areas:
+            "single btn"
+            "fourth fourth"
+            "eigth eigth"
+            "twl twl"
+            "unl unl";
+        }
+
+
+    .price_header{
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .price_book_btn{
+        display: block;
+    }
+    .price_review_btn{
+        display: none;
+    }
+
+     .price_title{
+        font-size: 28px;
+        width: 100%;
+
+    }
+    .price_subtitle{
+        font-size: 13px;
+        max-width: 327px;
+        text-align: flex-end;
+    }
+
+    .price_subtitle[data-id="price_1"]{
+        order: 2;
+    }
+
+     .price_subtitle[data-id="price_2"]{
+        order: 1;
+    }
+
+    .price_strong_activate{
+        color: inherit;
+    }
+    .price_book_btn{
+        display: block;
+        grid-area: btn;
+        order: 2;
+        width: 191px;
+        height: 49px;
+        padding: 20PX 50px;
+        font-size: 13px;
+    }
+
+      .price_card[data-id="single"]{
+        grid-area: single;
+        order: 1;
+    }
+    .price_card[data-id="8lessons"]{
+        grid-area: eigth;
+        order:4;
+    }
+    .price_card[data-id="12lessons"]{
+        grid-area: twl;
+        order:5;
+    }
+    .price_card[data-id="unlimited"]{
+        grid-area: unl;
+        order:6;
+    }
+    .price_card[data-id="4lessons"]{
+        grid-area: fourth;
+        order:3;
+    }
+
+     .price_single_value, .single_count, .price_count, .price_card_one, .price_card_total, .price_one_price--number{
+        font-size: 32px;
+    }
+    .price_single_label, .price_label, .price_one_label, .price_one_price--text{
+        font-size: 14px;
+    }
+
+    .price_card{
+        max-width: 327px;
+    }
+
+
+
 }

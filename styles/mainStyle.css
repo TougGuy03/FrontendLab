@@ -13,8 +13,8 @@
 
 body {
   margin: 0 auto;
-  overflow-x: hidden;
   background-color: var(--color-background);
+  overflow-x: hidden;
 }
 
 main{
@@ -22,4 +22,5 @@ main{
   flex-direction: column;
   gap: 120px;
   margin-bottom: 120px;
+  overflow-x: hidden;
 }

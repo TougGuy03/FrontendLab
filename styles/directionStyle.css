@@ -12,7 +12,7 @@
 .directions_header{
     display: flex;
     flex-direction: row;
-    gap: 101px;
+    justify-content: space-between;
     
 }
 
@@ -34,6 +34,9 @@
     letter-spacing: 0%;
     color: var(--color-text-double);
     align-items: flex-start;
+    max-width: 362px;
+    width: 100%;
+    margin: 0;
 }
 
 .directions_main{
@@ -80,7 +83,7 @@
 .directions_media img{
      width: 100%;
   max-width: 346px;
-  height: auto;
+  height: 493px;
   aspect-ratio: 346 / 493;
     border-top-left-radius: 173px;
     border-top-right-radius: 173px;
@@ -121,7 +124,7 @@
 .directions_inf_meta_main{
     font-family: Raleway;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 25px;
     line-height: 130%;
     letter-spacing: 0%;
     color: var(--color-text-double);
@@ -178,6 +181,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 6px; 
 }
 
 .direction_flower{
@@ -185,3 +189,136 @@
     top: 341.26px;
     left: -8.34px;
 }
+
+
+@media (max-width: 768px) {
+    .directions_main{
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "buttons buttons"
+      "media   info";
+      gap: 32px;
+    }
+    
+
+
+    .directions_title{
+        font-size: 30px;
+        max-width: 428px;
+    }
+    .directions_subtitles{
+        font-size: 14px;
+        max-width: 245px;
+    }
+    .directions_buttons{ 
+        flex-direction: row;
+        grid-area: buttons; 
+        max-width: 100%;
+        justify-content: center;
+    }
+    .direction_btn{
+       font-size: 12px;
+       padding: 16px 20px;
+        
+    }
+
+
+     .directions_media{   grid-area: media; }
+     .directions_inf{     grid-area: info; }
+
+     .directions_inf_meta_main{
+        font-size: 15px;
+        order: 1;
+        margin-bottom: 0;
+    }
+
+    .directions_inf_meta_description { order: 1; }
+    .directions_inf_text             { order: 3; }
+
+     .direction_flower{
+        display: none;
+     }
+}
+
+@media (max-width: 375px) {
+    .directions_main{
+    display: flex;
+    flex-direction: column;
+      gap: 32px;
+    }
+    
+
+    .directions_header{
+        flex-direction: column;
+    }
+
+    .directions_title{
+        font-size: 26px;
+        max-width: 307px;
+    }
+    
+    .directions_subtitles{
+        font-size: 16px;
+        max-width: 273px;
+    }
+    .directions_buttons{ 
+        flex-direction: row;
+        grid-area: buttons; 
+        max-width: 100%;
+        justify-content: center;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        overflow-x: auto;
+    }
+    .direction_btn{
+       font-size: 12px;
+       padding: 16px 20px;
+        
+    }
+
+
+     .directions_inf_meta_main{
+        font-size: 15px;
+        order: 2;
+        margin-bottom: -20px;
+    }
+
+    .directions_inf_meta_description { 
+        order: 2;
+        flex-direction: row;
+        justify-content: space-between;
+
+     }
+    .directions_inf_text p{ 
+        order: 3; 
+        font-size: 13px;
+    }
+
+    .direction_days, .direction_duration{
+        font-size: 13px;
+        width: 88px;
+    }
+
+    .direction_days_container, .direction_duration_container{
+        gap: 11px;
+    }
+
+     .direction_flower{
+        display: none;
+     }
+
+  
+    .directions_media img{
+        width: 100%;
+    max-width: 327px;
+    height: 258px;
+        border-top-left-radius: 129px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        object-fit: cover;
+        transition: opacity 1s ease;
+        
+    }
+
+}
+
